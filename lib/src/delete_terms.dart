@@ -34,5 +34,5 @@ Future<void> _deleteTermsForFile(
   }
   // Indent is being used for proper formatting
   await File(arbFile.path)
-      .writeAsString(JsonEncoder.withIndent(' ' * 1).convert(fileJson));
+      .writeAsString(JsonEncoder.withIndent(' ' * 2).convert(fileJson));
 }
